@@ -95,8 +95,8 @@ The dataset consists of 1,839 data points, each containing 7 fields (columns), p
 ## Requirements
 Check `requirements.txt` for a complete list of dependencies.
 
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Feel free to submit issues, suggest enhancements, or fork the repo to collaborate. As a fellow learner in AI (like myself, @Jackksonns), I'd love to grow this project with the community.
 
-## 📜 License
+## License
 This project is licensed under the MIT License—see the LICENSE file for details.
