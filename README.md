@@ -2,7 +2,7 @@
 
 Uncover hidden themes in financial news with advanced topic modeling! This project leverages BERTopic, a cutting-edge technique, to analyze financial news articles, offering powerful text preprocessing, vectorization, and insightful topic modeling capabilities.
 
-## 🌟 Key Features
+## Key Features
 
 ### Advanced Text Preprocessing
 - Comprehensive cleaning: Removes special characters, converts to lowercase
@@ -24,7 +24,7 @@ Uncover hidden themes in financial news with advanced topic modeling! This proje
 - Provides detailed document distribution statistics
 - Generates intuitive visualizations to explore results visually
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 
@@ -62,7 +62,7 @@ python financial_news_bertopic_analyzer.py
    - Evaluation Metrics: Saved as `topic_modeling_evaluation.json`
    - Visualizations: Automatically generated for topic and distribution analysis
 
-## 📊 Data Format
+## Data Format
 
 ### Dataset Description
 This project uses the High-Quality Financial News Dataset, which contains comprehensive financial information including:
@@ -92,7 +92,7 @@ The dataset consists of 1,839 data points, each containing 7 fields (columns), p
    - Topic visualization
    - Topic distribution charts
 
-## 📋 Requirements
+## Requirements
 Check `requirements.txt` for a complete list of dependencies.
 
 ## 🤝 Contributing
