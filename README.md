@@ -150,5 +150,3 @@ If you would like to contribute:
 5. Open a Pull Request and describe your changes
 
 As a fellow learner in AI, I'd love to collaborate and improve this project with the community. (@Jackksonns)
-
----
