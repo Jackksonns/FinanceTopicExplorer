@@ -134,19 +134,3 @@ The dataset in the original experiments contains 1,839 data points with 7 fields
 ## Requirements
 
 See `requirements.txt` for a complete list of dependencies.
-
----
-
-## Contributing
-
-Contributions are welcome — issues, feature requests and pull requests are encouraged.
-
-If you would like to contribute:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m "Add feature"`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request and describe your changes
-
-As a fellow learner in AI, I'd love to collaborate and improve this project with the community. (@Jackksonns)
