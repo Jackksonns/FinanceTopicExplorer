@@ -1,102 +1,154 @@
-# Financial News Topic Modeling
+# FinTopic Explorer
 
-Uncover hidden themes in financial news with advanced topic modeling! This project leverages BERTopic, a cutting-edge technique, to analyze financial news articles, offering powerful text preprocessing, vectorization, and insightful topic modeling capabilities.
+**Uncover key themes in financial news.**
+
+Uncover meaningful, actionable themes from financial news using BERTopic. This project provides a complete pipeline for preprocessing financial text, vectorizing content, building BERTopic models, evaluating results, and visualizing topic distributions.
+
+---
 
 ## Key Features
 
 ### Advanced Text Preprocessing
-- Comprehensive cleaning: Removes special characters, converts to lowercase
-- Filters stop words, applies stemming and lemmatization
-- Detailed word count analysis for deeper insights
+
+* Comprehensive cleaning: removes special characters and converts text to lowercase
+* Stop words filtering, stemming and lemmatization
+* Detailed word count analysis and token statistics for deeper insight
 
 ### Flexible Text Vectorization
-- Utilizes TF-IDF for robust feature extraction
-- Supports N-gram analysis for capturing contextual patterns
-- Fully customizable vectorization parameters to suit your needs
+
+* TF-IDF vectorization for robust feature extraction
+* Supports N-gram analysis to capture contextual patterns
+* Customizable vectorizer parameters to fit different datasets and goals
 
 ### State-of-the-Art Topic Modeling
-- Powered by BERTopic, delivering precise and dynamic topic extraction
-- Automatically determines optimal topic numbers
-- Analyzes topic similarity and document-topic distributions for comprehensive insights
+
+* Built on BERTopic for dynamic and interpretable topic extraction
+* Automatic detection and refinement of topic clusters
+* Analysis of topic similarity and document-topic distributions for rich insights
 
 ### In-Depth Model Evaluation
-- Measures topic diversity and significance with clear metrics
-- Provides detailed document distribution statistics
-- Generates intuitive visualizations to explore results visually
+
+* Metrics to measure topic diversity, significance, and coherence
+* Detailed document distribution and topic-size statistics
+* Automatic generation of visualizations for topic exploration
+
+---
 
 ## Getting Started
 
 ### Installation
 
 1. Clone the Repository
+
 ```bash
-git clone https://github.com/Jackksonns/financial-news-topic-modeling.git
-cd financial-news-topic-modeling
+git clone https://github.com/Jackksonns/fin-topic-explorer.git
+cd fin-topic-explorer
 ```
 
 2. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Download NLTK Data
+
 ```python
 import nltk
 nltk.download('stopwords')
 nltk.download('wordnet')
 ```
 
+> Note: Check `requirements.txt` for exact package versions used in this project.
+
 ### Usage
 
 1. Prepare Your Data
-   - Place your financial news dataset (CSV format) in the `financial news dataset` folder
-   - Ensure the CSV has a `Content` column with raw news articles
+
+   * Place your financial news dataset (CSV format) in the `financial news dataset` folder
+   * Ensure the CSV file contains a `Content` column with raw news article text
 
 2. Run the Analysis
+
 ```bash
 python financial_news_bertopic_analyzer.py
 ```
 
 3. Explore Results
-   - Processed Data: Saved as `processed_data.csv`
-   - Evaluation Metrics: Saved as `topic_modeling_evaluation.json`
-   - Visualizations: Automatically generated for topic and distribution analysis
+
+* **Processed Data:** saved as `processed_data.csv`
+* **Evaluation Metrics:** saved as `topic_modeling_evaluation.json`
+* **Visualizations:** topic and distribution visualizations are generated automatically
+
+---
 
 ## Data Format
 
 ### Dataset Description
-This project uses the High-Quality Financial News Dataset, which contains comprehensive financial information including:
-- Company announcements (e.g., dividend decisions)
-- Agreement updates (e.g., memorandum of understanding extensions)
-- Contract signings (e.g., engineering contracts)
 
-The dataset consists of 1,839 data points, each containing 7 fields (columns), providing a substantial foundation for robust analysis.
+This project uses the *High-Quality Financial News Dataset*, containing a broad set of financial news types:
 
-> **Dataset Citation**:  
+* Company announcements (e.g., dividend decisions)
+* Agreement updates (e.g., memorandum of understanding extensions)
+* Contract signings (e.g., engineering contracts)
+
+The dataset in the original experiments contains 1,839 data points with 7 fields per entry — a solid foundation for topic modeling experiments.
+
+> **Dataset Citation**:
 > Abualigah, S. M. (2024). High-Quality Financial News Dataset for NLP Tasks. Kaggle. Available at: [https://www.kaggle.com/datasets/sayelabualigah/high-quality-financial-news-dataset-for-nlp-tasks](https://www.kaggle.com/datasets/sayelabualigah/high-quality-financial-news-dataset-for-nlp-tasks)
 
 ### Input
-- Required: A CSV file with a `Content` column containing raw financial news articles
-- Optional: Additional metadata columns (e.g., date, source)
+
+* **Required:** CSV file with a `Content` column containing raw financial news articles
+* **Optional:** Additional metadata columns (e.g., `date`, `source`, `company`)
 
 ### Output
-1. `processed_data.csv`: Enhanced dataset with:
-   - Cleaned, stop-word-free, stemmed, and lemmatized text
-   - Word counts, topic assignments, and probabilities
 
-2. `topic_modeling_evaluation.json`: Detailed metrics:
-   - Topic size distribution and similarity matrix
-   - Average topic probability, diversity, and significance scores
+1. `processed_data.csv` — cleaned and enriched dataset containing:
 
-3. Visualizations:
-   - Topic visualization
-   - Topic distribution charts
+   * Cleaned, stop-word-free, stemmed and lemmatized text
+   * Word counts, token statistics
+   * Topic assignments and topic probabilities per document
+
+2. `topic_modeling_evaluation.json` — evaluation metrics including:
+
+   * Topic size distribution and similarity matrix
+   * Average topic probability, diversity and significance scores
+
+3. **Visualizations** — generated figures for:
+
+   * Topic maps and topic-term distributions
+   * Topic distribution across the corpus
+
+---
+
+## Example Workflow
+
+1. Place dataset CSV in `financial news dataset/` with `Content` column
+2. Tune vectorizer parameters in `financial_news_bertopic_analyzer.py` (TF-IDF, n-grams)
+3. Run the script to preprocess, fit BERTopic, evaluate and save outputs
+4. Inspect `processed_data.csv`, `topic_modeling_evaluation.json`, and the generated visualizations
+
+---
 
 ## Requirements
-Check `requirements.txt` for a complete list of dependencies.
+
+See `requirements.txt` for a complete list of dependencies.
+
+---
 
 ## Contributing
-Contributions are welcome! Feel free to submit issues, suggest enhancements, or fork the repo to collaborate. As a fellow learner in AI (like myself, @Jackksonns), I'd love to grow this project with the community.
 
-## License
-This project is licensed under the MIT License—see the LICENSE file for details.
+Contributions are welcome — issues, feature requests and pull requests are encouraged.
+
+If you would like to contribute:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m "Add feature"`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request and describe your changes
+
+As a fellow learner in AI, I'd love to collaborate and improve this project with the community. (@Jackksonns)
+
+---
