@@ -1,4 +1,4 @@
-# FinTopic Explorer
+# Finance Topic Explorer
 
 **Uncover key themes in financial news.**
 
