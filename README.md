@@ -1,7 +1,7 @@
 # Finance Topic Explorer
 
 **Uncover key themes in financial news.**
-
+[![GitHub](https://img.shields.io/badge/GitHub-Jackksonns-blue?style=flat-square&logo=github)](https://github.com/Jackksonns)
 Uncover meaningful, actionable themes from financial news using BERTopic. This project provides a complete pipeline for preprocessing financial text, vectorizing content, building BERTopic models, evaluating results, and visualizing topic distributions.
 
 ---
